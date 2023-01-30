@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--head-->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title hissesi-->
     <title>Login AHMS</title>
+
+    <!-- title iconu-->
     <link
       rel="icon"
       type="image/x-icon"
       href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/horse-icon.png"
     />
   </head>
+  <!-- basic style-->
   <style>
     body {
       background-color: powderblue;
@@ -26,24 +32,31 @@
       background-color: rgb(18, 126, 193);
     }
   </style>
+
+  <!-- body part-->
   <body>
+    <!-- header-->
     <header>
       <h1><a href="index.html">Atlar haqqında məlumat sistemi</a></h1>
     </header>
 
+    <!-- main-->
     <main>
+      <!-- app form-->
       <form>
+        <!-- ad daxil etme fieldi-->
         <label for="fid"> Adinizi daxil edin:</label> <br />
         <input type="text" id="fid" placeholder="adiniz" /><br />
-
+        <!-- email fieldi-->
         <label for="emailid"> Email </label><br />
         <input type="email" id="emailid" placeholder="E-mailiniz" /><br />
-
+        <!-- Shifre elave edilme filedi-->
         <label for="passid"> Şifrə </label><br />
         <input type="password" id="passid" placeholder="Şifrəniz" /><br /><br />
         <input type="checkbox" onclick="gormefunksiyasi()" />şifrəni görmək üçün
         klikəyin <br /><br /><br />
 
+        <!-- shifrenin gorulmesi chechbox funksiyasi-->
         <script>
           function gormefunksiyasi() {
             var x = document.getElementById("passid");
@@ -55,14 +68,18 @@
           }
         </script>
 
+        <!-- istifadeci qaydalari-->
         <label>olmayan istifadəçi qaydaları ilə razılaşıram</label><br />
         <input type="radio" /><br />
 
+        <!-- submit hisse-->
         <label for="subid"></label><br />
         <input type="submit" name="Təsdiq" id="subid" value="Təsdiq" /><br />
       </form>
     </main>
   </body>
+
+  <!-- footer-->
   <footer>
     <div>
       <nav>
