@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login AHMS</title>
-    <link rel="icon" type="image/x-icon" href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/horse-icon.png">
-</head>
-<style>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/horse-icon.png"
+    />
+  </head>
+  <style>
+    body {
+      background-color: powderblue;
+    }
+    h1 {
+      font-style: italic;
+      font-size: x-large;
+      color: rgb(238, 18, 32);
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKSOJlQcJnbGInYzEB4nXTBUpl9g9RfL4sfYYpjQ0aWxh4ZpSbBHKHYPVELpljqHjE0A&usqp=CAU);
+    }
 
-body {
-  background-color: powderblue;
-}
-h1{ font-style: italic;font-size: x-large;color:rgb(238, 18, 32); background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKSOJlQcJnbGInYzEB4nXTBUpl9g9RfL4sfYYpjQ0aWxh4ZpSbBHKHYPVELpljqHjE0A&usqp=CAU);}
-
-    footer{background-color:rgb(18, 126, 193);}
-    </style>
-<body>
+    footer {
+      background-color: rgb(18, 126, 193);
+    }
+  </style>
+  <body>
     <header>
-
-        <h1> <a href="index.html">Atlar haqqında məlumat sistemi</a> </h1>
-    </Header>
+      <h1><a href="index.html">Atlar haqqında məlumat sistemi</a></h1>
+    </header>
 
     <main>
-        <form>
-            <label for="fid"> Adinizi daxil edin:</label> <br>
-            <input type="text" id="fid" placeholder="adiniz"><br>
+      <form>
+        <label for="fid"> Adinizi daxil edin:</label> <br />
+        <input type="text" id="fid" placeholder="adiniz" /><br />
 
-            
+        <label for="emailid"> Email </label><br />
+        <input type="email" id="emailid" placeholder="E-mailiniz" /><br />
 
-            <label for="emailid"> Email </label><br>
-            <input type="email" id="emailid" placeholder="E-mailiniz"><br>
+        <label for="passid"> Şifrə </label><br />
+        <input type="password" id="passid" placeholder="Şifrəniz" /><br /><br />
+        <input type="checkbox" onclick="gormefunksiyasi()" />şifrəni görmək üçün
+        klikəyin <br /><br /><br />
 
-            <label for="passid"> Şifrə </label><br>
-            <input type="password"  id="passid" placeholder="Şifrəniz"><br><br>
-            <input type="checkbox" onclick="gormefunksiyasi()">şifrəni görmək üçün klikəyin <br><br><br>
+        <script>
+          function gormefunksiyasi() {
+            var x = document.getElementById("passid");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+        </script>
 
-                    <script>
-                    function gormefunksiyasi() {
-                    var x = document.getElementById("passid");
-                    if (x.type === "password") {
-                        x.type = "text";
-                    } else {
-                        x.type = "password";
-                    }
-                    }
-                    </script>
+        <label>olmayan istifadəçi qaydaları ilə razılaşıram</label><br />
+        <input type="radio" /><br />
 
-            <label>olmayan istifadəçi qaydaları ilə razılaşıram</label><br>
-            <input type="radio"><br>
-
-            <label for="subid"></label><br>
-            <input type ="submit" name="Təsdiq" id="subid" value="Təsdiq"><br>
-
-
-
-
-
-        </form>
+        <label for="subid"></label><br />
+        <input type="submit" name="Təsdiq" id="subid" value="Təsdiq" /><br />
+      </form>
     </main>
-</body>
-<footer>
+  </body>
+  <footer>
     <div>
-        <nav>
-            <ul>
-                <li> <a href="#">Contact us</a></li>
-                <li> <a href="#">About us</a> </li>
-                <li> <a href="#">Partners</a> </li>
-
-             </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </nav>
     </div>
     <div>
-        <H>
-            HORSES MMC
-        </H>
-        
+      <H> HORSES MMC </H>
     </div>
-</footer>
+  </footer>
 </html>
